@@ -1,0 +1,96 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px
+}
+
+.card .card-body .card-title {
+  font-size: 22px;
+  text-align: center;
+  font-weight: normal;
+  color: #241cbb;
+  margin: 0;
+}
+
+.card .card-body todo-form input {
+  border: 1px solid #241cbb;
+}
+
+.card .card-body todo-list input {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid transparent;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.card .card-body todo-list input:focus {
+  box-shadow: none;
+  border-bottom: 1px solid rgb(180, 13, 13);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.card .card-body .btn-go {
+  right: 15px;
+  color: #241cbb;
+}
+
+/**
+ * The dnd-list should always have a min-height,
+ * otherwise you can't drop to it once it's empty
+ */
+ .simpleDemo ul[dnd-list] {
+  min-height: 42px;
+  padding-left: 0px;
+}
+
+/**
+* The dndDraggingSource class will be applied to
+* the source element of a drag operation. It makes
+* sense to hide it to give the user the feeling
+* that he's actually moving it.
+*/
+.simpleDemo ul[dnd-list] .dndDraggingSource {
+  display: none;
+}
+
+/**
+* An element with .dndPlaceholder class will be
+* added to the dnd-list while the user is dragging
+* over it.
+*/
+.simpleDemo ul[dnd-list] .dndPlaceholder {
+  background-color: #ddd;
+  display: block;
+  min-height: 42px;
+}
+
+.simpleDemo ul[dnd-list] li {
+  background-color: #fff;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: -1px;
+}
+
+.simpleDemo ul[dnd-list] li .btn-actions {
+  display: none;
+}
+
+.simpleDemo ul[dnd-list] li:hover {
+  background-color: rgba(123,123,123,.05);
+  border-top: 1px solid transparent;
+}
+
+.simpleDemo ul[dnd-list] li:hover .btn-actions{
+  display: block;
+}
+
+
+
+/**
+* Show selected elements in green
+*/
+.simpleDemo ul[dnd-list] li.selected {
+  background-color: #dff0d8;
+  color: #3c763d;
+}

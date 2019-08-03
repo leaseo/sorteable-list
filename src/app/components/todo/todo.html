@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col col-md-8 offset-md-2">
+    <div class="card shadow p-3 my-5 bg-white rounded">
+      <div class="card-body">
+        <h5 class="card-title text-center">My Sorteable List</h5>
+        <hr class="mb-4">
+        <todo-form todo="$ctrl.newTodo" on-add-todo="$ctrl.addTodo($event)"></todo-form>  
+        <todo-list todos="$ctrl.todos" on-update-todo="$ctrl.updateTodo($event)" on-delete-todo="$ctrl.deleteTodo($event)" on-reorder-todo="$ctrl.reOrderTodo()"></todo-list>
+        <button type="button" class="btn btn-outline-dark btn-sm mt-2 float-right" ng-click="$ctrl.deleteAllTodo()" ng-show="$ctrl.todos.length">Clear</button>  
+      </div>
+    </div>
+  </div>
+</div>
